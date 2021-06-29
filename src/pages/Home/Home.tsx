@@ -1,6 +1,7 @@
 import React from "react";
-import Header from "../../components/Header/header";
 import Content from "../../containers/Content/content";
+import Header from "../../components/Header/header";
+import Store from "../../containers/Store/store";
 import { Wrapper } from "./styles";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <Wrapper>
       <Header />
       <Content />
+      <Store />
     </Wrapper>
   );
 };
