@@ -3,6 +3,7 @@ import Content from "../../containers/Content/content";
 import Header from "../../components/Header/header";
 import Store from "../../containers/Store/store";
 import { Wrapper } from "./styles";
+import Solutions from "../../containers/Solutions/solutions";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Header />
       <Content />
       <Store />
+      <Solutions />
     </Wrapper>
   );
 };
