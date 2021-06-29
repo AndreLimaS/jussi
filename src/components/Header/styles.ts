@@ -39,6 +39,9 @@ export const ContentSeach = styled.div`
 
 export const InputSeach = styled.input`
   border: none;
+  ::placeholder {
+    color: ${colors.pink};
+  }
 `;
 
 export const ImgTouch = styled.div`
