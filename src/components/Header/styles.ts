@@ -1,0 +1,50 @@
+import styled from "styled-components";
+import colors from "../../styles/colors";
+
+export const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+`;
+
+export const Menu = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const TitleMenu = styled.span`
+  padding: 0 25px;
+  cursor: pointer;
+  line-height: 24px;
+  transition: 0.1s;
+  :hover {
+    transform: scale(1.05);
+  }
+`;
+
+export const Search = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const ContentSeach = styled.div`
+  display: flex;
+  align-items: center;
+  border: 1px solid ${colors.gray};
+  box-sizing: border-box;
+  border-radius: 24px;
+  padding: 8px 10px;
+`;
+
+export const InputSeach = styled.input`
+  border: none;
+`;
+
+export const ImgTouch = styled.div`
+  transition: 0.1s;
+  cursor: pointer;
+  :hover {
+    transform: scale(1.05);
+  }
+`;

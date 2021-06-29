@@ -10,6 +10,10 @@ export default createGlobalStyle`
 
   body {
     background: ${colors.white};
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
   }
 
   button {
