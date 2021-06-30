@@ -10,12 +10,11 @@ import Contact from "../../containers/Contact/contact";
 const Home = () => {
   return (
     <Wrapper>
-      <Header />
       <Content />
       <Store />
       <Solutions />
       <About />
-      <Contact/>
+      <Contact />
     </Wrapper>
   );
 };
