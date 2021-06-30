@@ -1,4 +1,7 @@
 import React from "react";
+import logoJussi from "../../assets/images/logo.svg";
+import search from "../../assets/icons/search.svg";
+import shopping from "../../assets/icons/shopping.svg";
 import {
   Container,
   Menu,
@@ -8,9 +11,6 @@ import {
   InputSeach,
   ImgTouch,
 } from "./styles";
-import logoJussi from "../../assets/images/logo.svg";
-import search from "../../assets/icons/search.svg";
-import shopping from "../../assets/icons/shopping.svg";
 
 const Header = () => {
   return (

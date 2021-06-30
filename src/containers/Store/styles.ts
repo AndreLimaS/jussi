@@ -14,6 +14,9 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 80%;
+  img {
+    cursor: pointer;
+  }
 `;
 
 export const TitleStores = styled.span``;

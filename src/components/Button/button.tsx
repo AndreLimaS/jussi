@@ -7,5 +7,3 @@ const Button = ({ text, ...props }: ButtonPropsTypes) => {
 };
 
 export default Button;
-
-// const { text, textcolor, borderColor, background, borderRadius } = props;
