@@ -24,4 +24,8 @@ export default createGlobalStyle`
     color: inherit;
     text-decoration: none;
   }
+
+  input:focus-visible {
+    outline: none;
+  }
 `;

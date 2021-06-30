@@ -1,11 +1,12 @@
 import React from "react";
 import Content from "../../containers/Content/content";
-import Header from "../../components/Header/header";
-import Store from "../../containers/Store/store";
-import { Wrapper } from "./styles";
-import Solutions from "../../containers/Solutions/solutions";
 import About from "../../containers/About/about";
 import Contact from "../../containers/Contact/contact";
+import Header from "../../components/Header/header";
+import Newsletter from "../../containers/Newsletter/newsletter";
+import Store from "../../containers/Store/store";
+import Solutions from "../../containers/Solutions/solutions";
+import { Wrapper } from "./styles";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Solutions />
       <About />
       <Contact />
+      <Newsletter />
     </Wrapper>
   );
 };
