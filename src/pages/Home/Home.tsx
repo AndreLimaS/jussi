@@ -4,6 +4,7 @@ import Header from "../../components/Header/header";
 import Store from "../../containers/Store/store";
 import { Wrapper } from "./styles";
 import Solutions from "../../containers/Solutions/solutions";
+import About from "../../containers/About/about";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Content />
       <Store />
       <Solutions />
+      <About />
     </Wrapper>
   );
 };

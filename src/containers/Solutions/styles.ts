@@ -7,6 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 `;
+
 export const ContainerProduct = styled.div`
   display: flex;
   justify-content: space-between;
