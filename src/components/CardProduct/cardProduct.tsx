@@ -1,6 +1,4 @@
 import React from "react";
-import Button from "../Button/button";
-import colors from "../../styles/colors";
 import {
   Wrapper,
   Container,
@@ -10,28 +8,29 @@ import {
   Describe,
   Feature,
 } from "./styles";
-import ProductImg from "../../assets/images/Ellipse.png";
+import { ProductPropsTypes } from "./types";
 
-const CardProduct = () => {
+const CardProduct = ({
+  img,
+  number,
+  name,
+  describe,
+  feature,
+  button,
+}: ProductPropsTypes) => {
   return (
     <Wrapper>
       <Container>
         <ImgProduct>
-          <img src={ProductImg} alt={"Product 1"} />
-          <NumberProduct>P1</NumberProduct>
+          <img src={img} alt={name} />
+          <NumberProduct>{number}</NumberProduct>
         </ImgProduct>
-        <Title>Nome do Produto #1</Title>
-        <Describe>Descrição do produto #1</Describe>
-        <Feature>• Feature 1</Feature>
-        <Feature>• Feature 2</Feature>
-        <Feature>• Feature 3</Feature>
-        <Button
-          text={"Ver Solução"}
-          textcolor={colors.black}
-          borderColor={colors.green}
-          borderRadius={6}
-          background={colors.green}
-        />
+        <Title>{name}</Title>
+        <Describe>{describe}</Describe>
+        {feature?.map((item: string) => (
+          <Feature>• {item}</Feature>
+        ))}
+        {button}
       </Container>
     </Wrapper>
   );
