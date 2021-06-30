@@ -2,7 +2,6 @@ import React from "react";
 import Content from "../../containers/Content/content";
 import About from "../../containers/About/about";
 import Contact from "../../containers/Contact/contact";
-import Header from "../../components/Header/header";
 import Newsletter from "../../containers/Newsletter/newsletter";
 import Store from "../../containers/Store/store";
 import Solutions from "../../containers/Solutions/solutions";

@@ -2,9 +2,10 @@ import React from "react";
 import { ContainerButton } from "./styles";
 import { ButtonPropsTypes } from "./types";
 
-const Button = (props: ButtonPropsTypes) => {
-  const { text, textcolor, borderColor, background, borderRadius } = props;
+const Button = ({ text, ...props }: ButtonPropsTypes) => {
   return <ContainerButton {...props}>{text}</ContainerButton>;
 };
 
 export default Button;
+
+// const { text, textcolor, borderColor, background, borderRadius } = props;

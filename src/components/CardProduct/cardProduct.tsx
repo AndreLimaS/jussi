@@ -27,8 +27,8 @@ const CardProduct = ({
         </ImgProduct>
         <Title>{name}</Title>
         <Describe>{describe}</Describe>
-        {feature?.map((item: string) => (
-          <Feature>• {item}</Feature>
+        {feature?.map((item: string, index: number) => (
+          <Feature key={index}>• {item}</Feature>
         ))}
         {button}
       </Container>

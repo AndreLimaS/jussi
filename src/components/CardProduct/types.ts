@@ -4,5 +4,5 @@ export interface ProductPropsTypes {
   name: string;
   describe: string;
   feature?: string[];
-  button: JSX.Element;
+  button?: JSX.Element;
 }

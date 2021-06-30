@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Button from "../../components/Button/button";
 import CardProduct from "../../components/CardProduct/cardProduct";
 import colors from "../../styles/colors";
-import ProductImg from "../../assets/images/Ellipse.png";
+import { listproducts } from "../../services/Product/listProduct";
+import { ProductPropsTypes } from "../../components/CardProduct/types";
 import {
   Container,
   ContainerProduct,
@@ -12,6 +13,21 @@ import {
 } from "./styles";
 
 const Solutions = () => {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    getProducts();
+  });
+
+  const getProducts = useCallback(() => {
+    listproducts()
+      .then((response) => {
+        setProducts(response);
+      })
+      .catch((error) => {
+        console.log("Erro: ", error);
+      });
+  }, []);
+
   return (
     <Container>
       <TitleSolutions>
@@ -19,22 +35,30 @@ const Solutions = () => {
         <Title>Nossas soluções</Title>
       </TitleSolutions>
       <ContainerProduct>
-        <CardProduct
-          img={ProductImg}
-          number={"P1"}
-          name={"Nome do Produto #1"}
-          describe={"Descrição do produto #1"}
-          feature={["Feature 1", "Feature 2", "Feature 3"]}
-          button={
-            <Button
-              text={"Ver Solução"}
-              textcolor={colors.black}
-              borderColor={colors.green}
-              borderRadius={6}
-              background={colors.green}
+        {products?.map(
+          (
+            { img, number, name, describe, feature }: ProductPropsTypes,
+            index: number
+          ) => (
+            <CardProduct
+              key={index}
+              img={img}
+              number={number}
+              name={name}
+              describe={describe}
+              feature={feature}
+              button={
+                <Button
+                  text={"Ver Solução"}
+                  textcolor={colors.black}
+                  borderColor={colors.green}
+                  borderRadius={6}
+                  background={colors.green}
+                />
+              }
             />
-          }
-        />
+          )
+        )}
       </ContainerProduct>
     </Container>
   );

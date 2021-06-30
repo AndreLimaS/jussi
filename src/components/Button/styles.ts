@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ButtonPropsTypes } from "./types";
 
-export const ContainerButton = styled.button<ButtonPropsTypes>`
+export const ContainerButton = styled.button<ButtonPropsTypes | any>`
   padding: 10px 20px;
   background-color: ${(props) => props.background && props.background};
   border: 1px solid ${(props) => props.borderColor};
