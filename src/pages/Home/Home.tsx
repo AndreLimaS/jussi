@@ -5,6 +5,7 @@ import Store from "../../containers/Store/store";
 import { Wrapper } from "./styles";
 import Solutions from "../../containers/Solutions/solutions";
 import About from "../../containers/About/about";
+import Contact from "../../containers/Contact/contact";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Store />
       <Solutions />
       <About />
+      <Contact/>
     </Wrapper>
   );
 };

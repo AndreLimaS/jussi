@@ -4,7 +4,7 @@ import colors from "../../styles/colors";
 export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 20px 0;
+  padding: 20px 0 0 0;
 `;
 
 export const Container = styled.div`
