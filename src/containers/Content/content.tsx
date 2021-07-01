@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "../../components/Button/button";
-import CardBuy from "../../components/CardBuy/cardBuy";
+import Button from "../../components/Button/Button";
+import CardBuy from "../../components/CardBuy/CardBuy";
 import colors from "../../styles/colors";
 import { Container, Title, SubTitle, SessionOne, SessionTwo } from "./styles";
 import drink from "../../assets/images/drink.png";

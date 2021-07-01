@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../components/Button/button";
+import Button from "../../components/Button/Button";
 import { Container, ContainerInput, Title, InputEmail } from "./styles";
 import colors from "../../styles/colors";
 

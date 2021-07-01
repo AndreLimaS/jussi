@@ -10,7 +10,7 @@ import {
   ContentSeach,
   InputSeach,
   ImgTouch,
-} from "./styles";
+} from "./Styles";
 
 const Header = () => {
   return (

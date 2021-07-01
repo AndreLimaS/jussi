@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
-import Button from "../../components/Button/button";
-import CardProduct from "../../components/CardProduct/cardProduct";
+import Button from "../../components/Button/Button";
+import CardProduct from "../../components/CardProduct/CardProduct";
 import colors from "../../styles/colors";
-import { listproducts } from "../../services/Product/listProduct";
+import getproducts from "../../services/api/products/products";
 import { ProductPropsTypes } from "../../components/CardProduct/types";
 import {
   Container,
@@ -19,8 +19,8 @@ const Solutions = () => {
   });
 
   const getProducts = useCallback(() => {
-    listproducts()
-      .then((response) => {
+    getproducts()
+      .then((response: any) => {
         setProducts(response);
       })
       .catch((error) => {

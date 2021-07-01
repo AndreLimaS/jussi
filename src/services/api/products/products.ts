@@ -1,6 +1,6 @@
-import ProductImg from "../../assets/images/Ellipse.png";
+import ProductImg from "../../../assets/images//Ellipse.png";
 
-function productFetch() {
+function getproducts() {
   return new Promise((resolve) =>
     setTimeout(() => {
       resolve([
@@ -41,7 +41,4 @@ function productFetch() {
   );
 }
 
-export async function listproducts() {
-  const response = await productFetch();
-  return response;
-}
+export default getproducts;

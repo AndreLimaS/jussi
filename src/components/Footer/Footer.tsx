@@ -3,7 +3,7 @@ import facebookIcon from "../../assets/icons/facebook.svg";
 import instagramIcon from "../../assets/icons/instagram.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import wpCompany from "../../assets/images/wppcompany.png";
-import { Wrapper, Container, Social } from "./styles";
+import { Wrapper, Container, Social } from "./Styles";
 
 const Footer = () => {
   return (

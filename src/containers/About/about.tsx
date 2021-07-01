@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../components/Button/button";
+import Button from "../../components/Button/Button";
 import colors from "../../styles/colors";
 import houseJussi from "../../assets/images/jussi-house.png";
 import {

@@ -7,7 +7,7 @@ import {
   Title,
   Describe,
   Feature,
-} from "./styles";
+} from "./Styles";
 import { ProductPropsTypes } from "./types";
 
 const CardProduct = ({

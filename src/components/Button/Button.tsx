@@ -1,5 +1,5 @@
 import React from "react";
-import { ContainerButton } from "./styles";
+import { ContainerButton } from "./Styles";
 import { ButtonPropsTypes } from "./types";
 
 const Button = ({ text, ...props }: ButtonPropsTypes) => {
