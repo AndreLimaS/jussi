@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "../../components/Button/Button";
 import colors from "../../styles/colors";
-import Pokemon from "../../assets/images/pokemon.png";
 import {
   Wrapper,
   Container,
@@ -10,16 +9,17 @@ import {
   Title,
   Force,
 } from "./Styles";
-const CardPokemon = () => {
+import { CardPokemonProps } from "./types";
+const CardPokemon = ({ image, name, hp }: CardPokemonProps) => {
   return (
     <Wrapper>
       <Container>
         <ContainerCard>
           <ImgProduct>
-            <img src={Pokemon} alt="pokemon" />
+            <img src={image} alt={name} />
           </ImgProduct>
-          <Title>Vanusaur</Title>
-          <Force>HP : 180</Force>
+          <Title>{name}</Title>
+          <Force>HP : {hp}</Force>
           <Button
             text={"Saiba Mais"}
             textColor={colors.black}

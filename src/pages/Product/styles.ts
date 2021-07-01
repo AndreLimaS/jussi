@@ -1,17 +1,22 @@
 import styled from "styled-components";
 import colors from "../../styles/colors";
 
-export const Container = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   border-top: 1px solid ${colors.gray};
   min-height: 100vh;
+`;
+
+export const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 export const TitleProducts = styled.div`
   display: flex;
   margin: 40px 0 20px 40px;
-  width: 80%;
 `;
 
 export const Title = styled.h1`

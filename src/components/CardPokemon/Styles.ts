@@ -9,8 +9,6 @@ export const Wrapper = styled.div`
 
 export const Container = styled.div`
   display: flex;
-  padding: 10px;
-  flex-wrap: wrap;
 `;
 
 export const ContainerCard = styled.div`
@@ -20,6 +18,12 @@ export const ContainerCard = styled.div`
   flex-direction: column;
   padding: 10px;
   margin: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+  :hover {
+    transform: scale(1.02);
+    box-shadow: 0px 32px 32px rgba(0, 0, 0, 0.25);
+  }
 `;
 
 export const ImgProduct = styled.div`
