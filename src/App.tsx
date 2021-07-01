@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import { StyleContainer } from "./styles/grid";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import Product from "./pages/Product/Product";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Global />
       <StyleContainer>
         <Header />
-        <Home />
+        {/* <Home /> */}
+        <Product />
         <Footer />
       </StyleContainer>
     </>
