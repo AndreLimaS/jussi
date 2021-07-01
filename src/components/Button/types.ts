@@ -1,6 +1,6 @@
 export interface ButtonPropsTypes {
   text: string;
-  textcolor: string;
+  textColor: string;
   borderColor: string;
   borderRadius: number;
   background: string;

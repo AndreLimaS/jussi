@@ -7,8 +7,8 @@ import {
   Menu,
   TitleMenu,
   Search,
-  ContentSeach,
-  InputSeach,
+  ContentSearch,
+  InputSearch,
   ImgTouch,
 } from "./Styles";
 
@@ -21,12 +21,12 @@ const Header = () => {
         <TitleMenu>Conheça a Jüssi</TitleMenu>
       </Menu>
       <Search>
-        <ContentSeach>
-          <InputSeach placeholder="Buscar" />
+        <ContentSearch>
+          <InputSearch placeholder="Buscar" />
           <ImgTouch>
             <img width="16px" height="16px" src={search} alt="Search" />
           </ImgTouch>
-        </ContentSeach>
+        </ContentSearch>
         <TitleMenu>Login</TitleMenu>
         <ImgTouch>
           <img src={shopping} alt="Shopping" />

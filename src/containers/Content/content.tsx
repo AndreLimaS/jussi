@@ -23,7 +23,7 @@ const Content = () => {
         </SubTitle>
         <Button
           text="Veja nossas soluções"
-          textcolor={colors.black}
+          textColor={colors.black}
           borderColor={colors.black}
           borderRadius={6}
           background={colors.green}
@@ -38,13 +38,13 @@ const Content = () => {
           button={
             <Button
               text="Comprar em 12x"
-              textcolor={colors.pink}
+              textColor={colors.pink}
               borderColor={colors.pink}
               background={colors.white}
               borderRadius={24}
             />
           }
-        ></CardBuy>
+        />
         <CardBuy
           image={eletronicTwo}
           text={"Geladeira"}
@@ -53,13 +53,13 @@ const Content = () => {
           button={
             <Button
               text="Mais detalhes"
-              textcolor={colors.pink}
+              textColor={colors.pink}
               borderColor={colors.pink}
               background={colors.white}
               borderRadius={24}
             />
           }
-        ></CardBuy>
+        />
         <CardBuy
           image={drink}
           text={"Whisky"}
@@ -68,13 +68,13 @@ const Content = () => {
           button={
             <Button
               text="Adicionar à sacola"
-              textcolor={colors.pink}
+              textColor={colors.pink}
               borderColor={colors.pink}
               background={colors.white}
               borderRadius={24}
             />
           }
-        ></CardBuy>
+        />
       </SessionTwo>
     </Container>
   );

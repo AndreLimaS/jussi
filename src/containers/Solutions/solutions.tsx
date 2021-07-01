@@ -50,7 +50,7 @@ const Solutions = () => {
               button={
                 <Button
                   text={"Ver Solução"}
-                  textcolor={colors.black}
+                  textColor={colors.black}
                   borderColor={colors.green}
                   borderRadius={6}
                   background={colors.green}

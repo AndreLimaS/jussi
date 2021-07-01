@@ -11,10 +11,10 @@ const Newsletter = () => {
         <br /> de produtos digitais.
       </Title>
       <ContainerInput>
-        <InputEmail placeholder={"Digite seu e-mail"}></InputEmail>
+        <InputEmail type={"email"} placeholder={"Digite seu e-mail"} />
         <Button
           text={"CADASTRAR"}
-          textcolor={colors.green}
+          textColor={colors.green}
           borderColor={colors.black}
           borderRadius={0}
           background={colors.black}

@@ -27,7 +27,7 @@ const About = () => {
           </TextAbout>
           <Button
             text={"Conheça a Jüssi"}
-            textcolor={colors.black}
+            textColor={colors.black}
             borderColor={colors.black}
             borderRadius={6}
             background={colors.white}

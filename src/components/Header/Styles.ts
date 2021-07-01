@@ -28,7 +28,7 @@ export const Search = styled.div`
   align-items: center;
 `;
 
-export const ContentSeach = styled.div`
+export const ContentSearch = styled.div`
   display: flex;
   align-items: center;
   border: 1px solid ${colors.gray};
@@ -37,7 +37,7 @@ export const ContentSeach = styled.div`
   padding: 8px 10px;
 `;
 
-export const InputSeach = styled.input`
+export const InputSearch = styled.input`
   border: none;
   ::placeholder {
     color: ${colors.pink};

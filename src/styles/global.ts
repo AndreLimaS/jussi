@@ -10,7 +10,7 @@ export default createGlobalStyle`
 
   body {
     background: ${colors.white};
-    font-family: Barlow;
+    font-family: Barlow, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
