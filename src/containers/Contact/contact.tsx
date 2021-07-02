@@ -1,5 +1,5 @@
-import React from "react";
-import { Container, Title, TextContact, TextEmail } from "./styles";
+import React from 'react';
+import { Container, Title, TextContact, TextEmail } from './styles';
 
 const Contact = () => {
   return (

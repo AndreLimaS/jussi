@@ -1,9 +1,9 @@
-import React from "react";
-import { Wrapper, Container, TitleStores } from "./styles";
-import logoBrastemp from "../../assets/images/logo-brastemp.png";
-import logoBuy from "../../assets/images/logo-compra.png";
-import logoConsul from "../../assets/images/logo-consul.png";
-import logothebar from "../../assets/images/logo-thebar.png";
+import React from 'react';
+import { Wrapper, Container, TitleStores } from './styles';
+import logoBrastemp from '../../assets/images/logo-brastemp.png';
+import logoBuy from '../../assets/images/logo-compra.png';
+import logoConsul from '../../assets/images/logo-consul.png';
+import logothebar from '../../assets/images/logo-thebar.png';
 
 const Store = () => {
   return (

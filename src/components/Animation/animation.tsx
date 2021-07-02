@@ -1,6 +1,6 @@
-import React from "react";
-import load from "../../styles/Animations/loading.json";
-import Lottie from "react-lottie";
+import React from 'react';
+import load from '../../styles/Animations/loading.json';
+import Lottie from 'react-lottie';
 
 const Animation = ({ isPaused }: any) => {
   const defaultOptions = {
@@ -8,18 +8,11 @@ const Animation = ({ isPaused }: any) => {
     autoplay: true,
     animationData: load,
     rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
+      preserveAspectRatio: 'xMidYMid slice'
+    }
   };
 
-  return (
-    <Lottie
-      options={defaultOptions}
-      height={400}
-      width={400}
-      isPaused={isPaused}
-    />
-  );
+  return <Lottie options={defaultOptions} height={400} width={400} isPaused={isPaused} />;
 };
 
 export default Animation;

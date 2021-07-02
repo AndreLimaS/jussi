@@ -1,16 +1,10 @@
-import React, { useState, useEffect, useCallback } from "react";
-import Button from "../../components/Button/Button";
-import CardProduct from "../../components/CardProduct/CardProduct";
-import colors from "../../styles/colors";
-import getproducts from "../../services/api/products/products";
-import { ProductPropsTypes } from "../../components/CardProduct/types";
-import {
-  Container,
-  ContainerProduct,
-  TitleSolutions,
-  Title,
-  LineTitle,
-} from "./styles";
+import React, { useState, useEffect, useCallback } from 'react';
+import Button from '../../components/Button/Button';
+import CardProduct from '../../components/CardProduct/CardProduct';
+import colors from '../../styles/colors';
+import getproducts from '../../services/api/products/products';
+import { ProductPropsTypes } from '../../components/CardProduct/types';
+import { Container, ContainerProduct, TitleSolutions, Title, LineTitle } from './styles';
 
 const Solutions = () => {
   const [products, setProducts] = useState([]);
@@ -23,23 +17,20 @@ const Solutions = () => {
       .then((response: any) => {
         setProducts(response);
       })
-      .catch((error) => {
-        console.log("Erro: ", error);
+      .catch(error => {
+        console.log('Erro: ', error);
       });
   }, []);
 
   return (
     <Container>
       <TitleSolutions>
-        <LineTitle>{"//"}</LineTitle>
+        <LineTitle>{'//'}</LineTitle>
         <Title>Nossas soluções</Title>
       </TitleSolutions>
       <ContainerProduct>
         {products?.map(
-          (
-            { img, number, name, describe, feature }: ProductPropsTypes,
-            index: number
-          ) => (
+          ({ img, number, name, describe, feature }: ProductPropsTypes, index: number) => (
             <CardProduct
               key={index}
               img={img}
@@ -49,7 +40,7 @@ const Solutions = () => {
               feature={feature}
               button={
                 <Button
-                  text={"Ver Solução"}
+                  text={'Ver Solução'}
                   textColor={colors.black}
                   borderColor={colors.green}
                   borderRadius={6}

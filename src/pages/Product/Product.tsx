@@ -1,12 +1,9 @@
-import React, { useState, useEffect, useCallback, useContext } from "react";
-import CardPokemon from "../../components/CardPokemon/Cardpokemon";
-import { Wrapper, Container, TitleProducts, LineTitle, Title } from "./styles";
-import {
-  getCardsPokemons,
-  getCardsPokemonName,
-} from "../../services/api/pokemons/pokemons";
-import { SearchContext } from "../../Context/Search";
-import Animation from "../../components/Animation/animation";
+import React, { useState, useEffect, useCallback, useContext } from 'react';
+import CardPokemon from '../../components/CardPokemon/Cardpokemon';
+import { Wrapper, Container, TitleProducts, LineTitle, Title } from './styles';
+import { getCardsPokemons, getCardsPokemonName } from '../../services/api/pokemons/pokemons';
+import { SearchContext } from '../../Context/Search';
+import Animation from '../../components/Animation/animation';
 const Product = () => {
   const [cards, setCards] = useState<CardsProps>();
   const { namePokemon } = useContext(SearchContext);
@@ -24,21 +21,21 @@ const Product = () => {
 
   const getCards = useCallback(() => {
     getCardsPokemons()
-      .then((response) => {
+      .then(response => {
         setCards(response);
       })
-      .catch((error) => {
-        console.log("Erro: ", error);
+      .catch(error => {
+        console.log('Erro: ', error);
       });
   }, []);
 
   const getCardsName = useCallback(() => {
     getCardsPokemonName(namePokemon)
-      .then((response) => {
+      .then(response => {
         setCards(response);
       })
-      .catch((error) => {
-        console.log("Erro: ", error);
+      .catch(error => {
+        console.log('Erro: ', error);
       });
   }, [namePokemon]);
 
@@ -53,21 +50,14 @@ const Product = () => {
   return (
     <Wrapper>
       <TitleProducts>
-        <LineTitle>{"//"}</LineTitle>
+        <LineTitle>{'//'}</LineTitle>
         <Title>Nossos Produtos</Title>
       </TitleProducts>
       <Container>
-        {!!cards?.data.length === false && (
-          <Animation isStopped={!!cards?.data.length} />
-        )}
+        {!!cards?.data.length === false && <Animation isStopped={!!cards?.data.length} />}
         {cards &&
           cards.data?.map((item, index) => (
-            <CardPokemon
-              key={index}
-              image={item.images.small}
-              name={item.name}
-              hp={item.hp}
-            />
+            <CardPokemon key={index} image={item.images.small} name={item.name} hp={item.hp} />
           ))}
       </Container>
     </Wrapper>

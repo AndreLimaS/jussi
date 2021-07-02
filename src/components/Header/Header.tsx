@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
-import { Link, useHistory } from "react-router-dom";
-import logoJussi from "../../assets/images/logo.svg";
-import search from "../../assets/icons/search.svg";
-import { SearchContext } from "../../Context/Search";
-import shopping from "../../assets/icons/shopping.svg";
-import { TargetProps, EventProps } from "./types";
+import React, { useContext } from 'react';
+import { Link, useHistory } from 'react-router-dom';
+import logoJussi from '../../assets/images/logo.svg';
+import search from '../../assets/icons/search.svg';
+import { SearchContext } from '../../Context/Search';
+import shopping from '../../assets/icons/shopping.svg';
+import { TargetProps, EventProps } from './types';
 import {
   Container,
   Menu,
@@ -13,8 +13,8 @@ import {
   Search,
   ContentSearch,
   InputSearch,
-  ImgTouch,
-} from "./Styles";
+  ImgTouch
+} from './Styles';
 const Header = () => {
   const { setNamePokemon } = useContext(SearchContext);
   let history = useHistory();
@@ -23,30 +23,26 @@ const Header = () => {
   };
 
   const handleKeyDown = (event: EventProps) => {
-    if (event.key === "Enter" || event.key === 13) {
-      history.push("produtos");
+    if (event.key === 'Enter' || event.key === 13) {
+      history.push('produtos');
     }
   };
 
   return (
     <Container>
       <Menu>
-        <Link to={"/"}>
+        <Link to={'/'}>
           <img src={logoJussi} alt="Jussi" />
         </Link>
         <TitleMenu>Nossas Soluções</TitleMenu>
         <TitleMenu>Conheça a Jüssi</TitleMenu>
-        <Link to={"produtos"}>
+        <Link to={'produtos'}>
           <TitleMenuKeyFrame>Produtos</TitleMenuKeyFrame>
         </Link>
       </Menu>
       <Search>
         <ContentSearch>
-          <InputSearch
-            placeholder="Buscar"
-            onChange={handleChange}
-            onKeyDown={handleKeyDown}
-          />
+          <InputSearch placeholder="Buscar" onChange={handleChange} onKeyDown={handleKeyDown} />
           <ImgTouch>
             <img width="16px" height="16px" src={search} alt="Search" />
           </ImgTouch>

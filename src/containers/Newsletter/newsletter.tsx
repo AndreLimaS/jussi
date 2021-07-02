@@ -1,7 +1,7 @@
-import React from "react";
-import Button from "../../components/Button/Button";
-import { Container, ContainerInput, Title, InputEmail } from "./styles";
-import colors from "../../styles/colors";
+import React from 'react';
+import Button from '../../components/Button/Button';
+import { Container, ContainerInput, Title, InputEmail } from './styles';
+import colors from '../../styles/colors';
 
 const Newsletter = () => {
   return (
@@ -11,9 +11,9 @@ const Newsletter = () => {
         <br /> de produtos digitais.
       </Title>
       <ContainerInput>
-        <InputEmail type={"email"} placeholder={"Digite seu e-mail"} />
+        <InputEmail type={'email'} placeholder={'Digite seu e-mail'} />
         <Button
-          text={"CADASTRAR"}
+          text={'CADASTRAR'}
           textColor={colors.green}
           borderColor={colors.black}
           borderRadius={0}

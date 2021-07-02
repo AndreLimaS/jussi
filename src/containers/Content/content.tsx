@@ -1,11 +1,11 @@
-import React from "react";
-import Button from "../../components/Button/Button";
-import CardBuy from "../../components/CardBuy/CardBuy";
-import colors from "../../styles/colors";
-import { Container, Title, SubTitle, SessionOne, SessionTwo } from "./styles";
-import drink from "../../assets/images/drink.png";
-import eletronicOne from "../../assets/images/eletronicOne.png";
-import eletronicTwo from "../../assets/images/eletronicTwo.png";
+import React from 'react';
+import Button from '../../components/Button/Button';
+import CardBuy from '../../components/CardBuy/CardBuy';
+import colors from '../../styles/colors';
+import { Container, Title, SubTitle, SessionOne, SessionTwo } from './styles';
+import drink from '../../assets/images/drink.png';
+import eletronicOne from '../../assets/images/eletronicOne.png';
+import eletronicTwo from '../../assets/images/eletronicTwo.png';
 
 const Content = () => {
   return (
@@ -18,8 +18,8 @@ const Content = () => {
         </Title>
         <SubTitle>
           A Jüssi é especialista na criação de lojas
-          {"\n"} usando a plataforma VTEX. Precisa criar sua
-          {"\n"} loja ou migrar de plataforma?
+          {'\n'} usando a plataforma VTEX. Precisa criar sua
+          {'\n'} loja ou migrar de plataforma?
         </SubTitle>
         <Button
           text="Veja nossas soluções"
@@ -32,7 +32,7 @@ const Content = () => {
       <SessionTwo>
         <CardBuy
           image={eletronicOne}
-          text={"Batedeira"}
+          text={'Batedeira'}
           top={20}
           zIndex={99}
           button={
@@ -47,7 +47,7 @@ const Content = () => {
         />
         <CardBuy
           image={eletronicTwo}
-          text={"Geladeira"}
+          text={'Geladeira'}
           top={160}
           left={-260}
           button={
@@ -62,7 +62,7 @@ const Content = () => {
         />
         <CardBuy
           image={drink}
-          text={"Whisky"}
+          text={'Whisky'}
           top={190}
           left={250}
           button={

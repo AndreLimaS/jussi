@@ -1,23 +1,8 @@
-import React from "react";
-import {
-  Wrapper,
-  Container,
-  ImgProduct,
-  NumberProduct,
-  Title,
-  Describe,
-  Feature,
-} from "./Styles";
-import { ProductPropsTypes } from "./types";
+import React from 'react';
+import { Wrapper, Container, ImgProduct, NumberProduct, Title, Describe, Feature } from './Styles';
+import { ProductPropsTypes } from './types';
 
-const CardProduct = ({
-  img,
-  number,
-  name,
-  describe,
-  feature,
-  button,
-}: ProductPropsTypes) => {
+const CardProduct = ({ img, number, name, describe, feature, button }: ProductPropsTypes) => {
   return (
     <Wrapper>
       <Container>

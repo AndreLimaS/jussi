@@ -1,6 +1,6 @@
-import axios from "axios";
+import axios from 'axios';
 
-const API_BASE = "https://api.pokemontcg.io/v2/cards";
+const API_BASE = 'https://api.pokemontcg.io/v2/cards';
 
 export const getCardsPokemons = async () => {
   try {

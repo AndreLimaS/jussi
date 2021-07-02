@@ -1,15 +1,8 @@
-import React from "react";
-import Button from "../../components/Button/Button";
-import colors from "../../styles/colors";
-import { CardPokemonProps } from "./types";
-import {
-  Wrapper,
-  ContainerDeitals,
-  ContainerCard,
-  ImgProduct,
-  Title,
-  Force,
-} from "./Styles";
+import React from 'react';
+import Button from '../../components/Button/Button';
+import colors from '../../styles/colors';
+import { CardPokemonProps } from './types';
+import { Wrapper, ContainerDeitals, ContainerCard, ImgProduct, Title, Force } from './Styles';
 const CardPokemon = ({ image, name, hp }: CardPokemonProps) => {
   return (
     <Wrapper>
@@ -21,7 +14,7 @@ const CardPokemon = ({ image, name, hp }: CardPokemonProps) => {
           <Title>{name}</Title>
           <Force>HP : {hp}</Force>
           <Button
-            text={"Saiba Mais"}
+            text={'Saiba Mais'}
             textColor={colors.black}
             borderColor={colors.green}
             borderRadius={6}

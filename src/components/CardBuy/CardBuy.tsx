@@ -1,6 +1,6 @@
-import React from "react";
-import { Container } from "./Styles";
-import { CardBuyProps } from "./types";
+import React from 'react';
+import { Container } from './Styles';
+import { CardBuyProps } from './types';
 
 const CardBuy = ({ image, text, button, ...props }: CardBuyProps) => {
   return (
