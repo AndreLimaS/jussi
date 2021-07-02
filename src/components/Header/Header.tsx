@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import logoJussi from "../../assets/images/logo.svg";
 import search from "../../assets/icons/search.svg";
+import { SearchContext } from "../../Context/Search";
 import shopping from "../../assets/icons/shopping.svg";
 import {
   Container,
@@ -13,12 +14,17 @@ import {
   InputSearch,
   ImgTouch,
 } from "./Styles";
-import { SearchContext } from "../../Context/Search";
 const Header = () => {
   const { setNamePokemon } = useContext(SearchContext);
-
+  let history = useHistory();
   const handleChange = ({ target }: any) => {
     setNamePokemon(target.value);
+  };
+
+  const handleKeyDown = (event: any) => {
+    if (event.key === "Enter" || event.key === 13) {
+      history.push("produtos");
+    }
   };
 
   return (
@@ -35,7 +41,11 @@ const Header = () => {
       </Menu>
       <Search>
         <ContentSearch>
-          <InputSearch placeholder="Buscar" onChange={handleChange} />
+          <InputSearch
+            placeholder="Buscar"
+            onChange={handleChange}
+            onKeyDown={handleKeyDown}
+          />
           <ImgTouch>
             <img width="16px" height="16px" src={search} alt="Search" />
           </ImgTouch>
