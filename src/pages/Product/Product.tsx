@@ -24,7 +24,7 @@ const Product = () => {
 
   const getCards = useCallback(() => {
     getCardsPokemons()
-      .then((response: any) => {
+      .then((response) => {
         setCards(response);
       })
       .catch((error) => {
@@ -34,7 +34,7 @@ const Product = () => {
 
   const getCardsName = useCallback(() => {
     getCardsPokemonName(namePokemon)
-      .then((response: any) => {
+      .then((response) => {
         setCards(response);
       })
       .catch((error) => {
@@ -58,7 +58,7 @@ const Product = () => {
       </TitleProducts>
       <Container>
         {!!cards?.data.length === false && (
-          <Animation isPaused={!!cards?.data.length} />
+          <Animation isStopped={!!cards?.data.length} />
         )}
         {cards &&
           cards.data?.map((item, index) => (

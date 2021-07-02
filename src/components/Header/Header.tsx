@@ -4,6 +4,7 @@ import logoJussi from "../../assets/images/logo.svg";
 import search from "../../assets/icons/search.svg";
 import { SearchContext } from "../../Context/Search";
 import shopping from "../../assets/icons/shopping.svg";
+import { TargetProps, EventProps } from "./types";
 import {
   Container,
   Menu,
@@ -17,11 +18,11 @@ import {
 const Header = () => {
   const { setNamePokemon } = useContext(SearchContext);
   let history = useHistory();
-  const handleChange = ({ target }: any) => {
+  const handleChange = ({ target }: TargetProps) => {
     setNamePokemon(target.value);
   };
 
-  const handleKeyDown = (event: any) => {
+  const handleKeyDown = (event: EventProps) => {
     if (event.key === "Enter" || event.key === 13) {
       history.push("produtos");
     }
