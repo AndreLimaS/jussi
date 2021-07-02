@@ -4,11 +4,13 @@ import colors from "../../styles/colors";
 export const Wrapper = styled.div`
   display: flex;
   margin: 10px 0;
-  padding: 10px;
+  padding: 15px 10px;
 `;
 
-export const Container = styled.div`
+export const ContainerDeitals = styled.div`
   display: flex;
+  flex-direction: column;
+  margin: 0 10px;
 `;
 
 export const ContainerCard = styled.div`
@@ -39,6 +41,7 @@ export const ImgProduct = styled.div`
 export const Title = styled.span`
   font-size: 19px;
   margin-bottom: 10px;
+  align-self: flex-start;
 `;
 
 export const Force = styled.span`
@@ -46,4 +49,5 @@ export const Force = styled.span`
   line-height: 18px;
   color: ${colors.pink};
   margin-bottom: 20px;
+  align-self: flex-start;
 `;

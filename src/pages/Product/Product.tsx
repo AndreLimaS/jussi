@@ -10,7 +10,6 @@ import Animation from "../../components/Animation/animation";
 const Product = () => {
   const [cards, setCards] = useState<CardsProps>();
   const { namePokemon } = useContext(SearchContext);
-
   type CardsProps = {
     data: [
       {
@@ -22,14 +21,6 @@ const Product = () => {
       }
     ];
   };
-
-  useEffect(() => {
-    if (namePokemon) {
-      getCardsName();
-    } else {
-      getCards();
-    }
-  }, [namePokemon]);
 
   const getCards = useCallback(() => {
     getCardsPokemons()
@@ -50,6 +41,14 @@ const Product = () => {
         console.log("Erro: ", error);
       });
   }, [namePokemon]);
+
+  useEffect(() => {
+    if (namePokemon) {
+      getCardsName();
+    } else {
+      getCards();
+    }
+  }, [getCards, getCardsName, namePokemon]);
 
   return (
     <Wrapper>

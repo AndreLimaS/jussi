@@ -4,7 +4,7 @@ import colors from "../../styles/colors";
 import { CardPokemonProps } from "./types";
 import {
   Wrapper,
-  Container,
+  ContainerDeitals,
   ContainerCard,
   ImgProduct,
   Title,
@@ -13,11 +13,11 @@ import {
 const CardPokemon = ({ image, name, hp }: CardPokemonProps) => {
   return (
     <Wrapper>
-      <Container>
-        <ContainerCard>
-          <ImgProduct>
-            <img src={image} alt={name} />
-          </ImgProduct>
+      <ContainerCard>
+        <ImgProduct>
+          <img src={image} alt={name} />
+        </ImgProduct>
+        <ContainerDeitals>
           <Title>{name}</Title>
           <Force>HP : {hp}</Force>
           <Button
@@ -27,8 +27,8 @@ const CardPokemon = ({ image, name, hp }: CardPokemonProps) => {
             borderRadius={6}
             background={colors.green}
           />
-        </ContainerCard>
-      </Container>
+        </ContainerDeitals>
+      </ContainerCard>
     </Wrapper>
   );
 };
