@@ -13,6 +13,22 @@ export const Menu = styled.div`
   align-items: center;
 `;
 
+export const TitleMenuKeyFrame = styled.span`
+  padding: 0 25px;
+  cursor: pointer;
+  animation: identifier 2.5s infinite;
+  @keyframes identifier {
+    0% {
+    }
+    50% {
+      color: ${colors.green};
+    }
+    100% {
+      color: ${colors.pink};
+    }
+  }
+`;
+
 export const TitleMenu = styled.span`
   padding: 0 25px;
   cursor: pointer;

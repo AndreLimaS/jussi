@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import logoJussi from "../../assets/images/logo.svg";
 import search from "../../assets/icons/search.svg";
 import shopping from "../../assets/icons/shopping.svg";
@@ -6,13 +7,13 @@ import {
   Container,
   Menu,
   TitleMenu,
+  TitleMenuKeyFrame,
   Search,
   ContentSearch,
   InputSearch,
   ImgTouch,
 } from "./Styles";
 import { SearchContext } from "../../Context/Search";
-
 const Header = () => {
   const { setNamePokemon } = useContext(SearchContext);
 
@@ -23,9 +24,14 @@ const Header = () => {
   return (
     <Container>
       <Menu>
-        <img src={logoJussi} alt="Jussi" />
+        <Link to={"/"}>
+          <img src={logoJussi} alt="Jussi" />
+        </Link>
         <TitleMenu>Nossas Soluções</TitleMenu>
         <TitleMenu>Conheça a Jüssi</TitleMenu>
+        <Link to={"produtos"}>
+          <TitleMenuKeyFrame>Produtos</TitleMenuKeyFrame>
+        </Link>
       </Menu>
       <Search>
         <ContentSearch>
