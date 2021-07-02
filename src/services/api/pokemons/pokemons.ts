@@ -10,3 +10,12 @@ export const getCardsPokemons = async () => {
     console.error(error);
   }
 };
+
+export const getCardsPokemonName = async (name: string) => {
+  try {
+    const { data } = await axios.get(`${API_BASE}?q=name:${name}&&pageSize=30`);
+    return data;
+  } catch (error) {
+    console.error(error);
+  }
+};

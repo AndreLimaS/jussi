@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../../components/Button/Button";
 import colors from "../../styles/colors";
+import { CardPokemonProps } from "./types";
 import {
   Wrapper,
   Container,
@@ -9,7 +10,6 @@ import {
   Title,
   Force,
 } from "./Styles";
-import { CardPokemonProps } from "./types";
 const CardPokemon = ({ image, name, hp }: CardPokemonProps) => {
   return (
     <Wrapper>

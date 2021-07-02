@@ -1,9 +1,16 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useContext } from "react";
 import CardPokemon from "../../components/CardPokemon/Cardpokemon";
 import { Wrapper, Container, TitleProducts, LineTitle, Title } from "./styles";
-import { getCardsPokemons } from "../../services/api/pokemons/pokemons";
+import {
+  getCardsPokemons,
+  getCardsPokemonName,
+} from "../../services/api/pokemons/pokemons";
+import { SearchContext } from "../../Context/Search";
 
 const Product = () => {
+  const [cards, setCards] = useState<CardsProps>();
+  const { namePokemon } = useContext(SearchContext);
+
   type CardsProps = {
     data: [
       {
@@ -15,11 +22,14 @@ const Product = () => {
       }
     ];
   };
-  const [cards, setCards] = useState<CardsProps>();
 
   useEffect(() => {
-    getCards();
-  }, []);
+    if (namePokemon) {
+      getCardsName();
+    } else {
+      getCards();
+    }
+  }, [namePokemon]);
 
   const getCards = useCallback(() => {
     getCardsPokemons()
@@ -30,6 +40,16 @@ const Product = () => {
         console.log("Erro: ", error);
       });
   }, []);
+
+  const getCardsName = useCallback(() => {
+    getCardsPokemonName(namePokemon)
+      .then((response: any) => {
+        setCards(response);
+      })
+      .catch((error) => {
+        console.log("Erro: ", error);
+      });
+  }, [namePokemon]);
 
   return (
     <Wrapper>

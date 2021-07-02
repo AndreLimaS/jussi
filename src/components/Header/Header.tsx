@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import logoJussi from "../../assets/images/logo.svg";
 import search from "../../assets/icons/search.svg";
 import shopping from "../../assets/icons/shopping.svg";
@@ -11,8 +11,15 @@ import {
   InputSearch,
   ImgTouch,
 } from "./Styles";
+import { SearchContext } from "../../Context/Search";
 
 const Header = () => {
+  const { setNamePokemon } = useContext(SearchContext);
+
+  const handleChange = ({ target }: any) => {
+    setNamePokemon(target.value);
+  };
+
   return (
     <Container>
       <Menu>
@@ -22,7 +29,7 @@ const Header = () => {
       </Menu>
       <Search>
         <ContentSearch>
-          <InputSearch placeholder="Buscar" />
+          <InputSearch placeholder="Buscar" onChange={handleChange} />
           <ImgTouch>
             <img width="16px" height="16px" src={search} alt="Search" />
           </ImgTouch>

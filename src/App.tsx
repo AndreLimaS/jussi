@@ -5,17 +5,20 @@ import { StyleContainer } from "./styles/grid";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Product from "./pages/Product/Product";
+import SearchProvider from "./Context/Search";
 
 function App() {
   return (
     <>
       <Global />
-      <StyleContainer>
-        <Header />
-        {/* <Home /> */}
-        <Product />
-        <Footer />
-      </StyleContainer>
+      <SearchProvider>
+        <StyleContainer>
+          <Header />
+          {/* <Home /> */}
+          <Product />
+          <Footer />
+        </StyleContainer>
+      </SearchProvider>
     </>
   );
 }
