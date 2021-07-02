@@ -5,7 +5,7 @@ Is a React application that has an ecommerce-based homepage, and a Pokémon card
 É uma aplicação React que com uma página inicial baseada em um ecommerce, e com uma pesquisa de cartas de Pokemon
 
 ![Screen Shot](screenshots/screenOne.jpg)
-![Screen Shot](screenshots/sreenTwo.jpg)
+![Screen Shot](screenshots/screenTwo.jpg)
 
 ## Getting started / Para começar
 
