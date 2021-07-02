@@ -1,46 +1,48 @@
-# Getting Started with Create React App
+# Jussi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Is a React application that has an ecommerce-based homepage, and a Pokémon card search
 
-## Available Scripts
+É uma aplicação React que com uma página inicial baseada em um ecommerce, e com uma pesquisa de cartas de Pokemon
 
-In the project directory, you can run:
+![Screen Shot](screenshots/screenOne.jpg)
+![Screen Shot](screenshots/screenTwo.jpg)
 
-### `yarn start`
+## Getting started / Para começar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Execute these below commands / Execute os seguintes comandos
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```sh
+git clone git@github.com:AndreLimaS/jussi.git
+cd jussi
+yarn install # to install dependencies
+yarn start # open localhost:3000
+```
 
-### `yarn test`
+## Credits / Creditos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[PokeMontCg](https://pokemontcg.io/) - used to get data / usado para obter as infromações dos Pokemons Cards
 
-### `yarn build`
+## Diary of developing / Diário do desenvolvimento
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Comecei com os downloads das imagens e o insert da font, criação das variáveis de cores e os estilos globais.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Primeira etapa de desenvolvimento foi o Header e assim fui seguindo com a codificação do layout, componentizei tudo aquilo que seria reaproveitado e separei os blocos em containers para ter uma organização melhor.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Decidi usar a API pokemontcs.oi, pois com as cartas de Pokemons daria um belo visual.
 
-### `yarn eject`
+- Percebi que seria bom a criação de mais uma página para mostrar a pesquisa das cartas.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Após o termino da codificação da página de produto, percebi necessário a criação de um context para fazer a pesquisa, e então parti para as requests e interações.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## To future / Para o futuro
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Add filters in product
+- Add message not found cards pokemon
+- Create page details
+- Add tests
+- Create Version Mobile
+- Add skeleton loader
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Url access / acesso a url
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Jussi Url](https://jussi-teste.netlify.app/)
