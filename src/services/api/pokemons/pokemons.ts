@@ -13,7 +13,7 @@ export const getCardsPokemons = async () => {
 
 export const getCardsPokemonName = async (name: string) => {
   try {
-    const { data } = await axios.get(`${API_BASE}?q=name:${name}&&pageSize=30`);
+    const { data } = await axios.get(`${API_BASE}?q=name:${name}&&pageSize=50`);
     return data;
   } catch (error) {
     console.error(error);

@@ -4,7 +4,6 @@ import colors from "../../styles/colors";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   border-top: 1px solid ${colors.gray};
   min-height: 100vh;
 `;
