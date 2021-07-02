@@ -6,7 +6,7 @@ import {
   getCardsPokemonName,
 } from "../../services/api/pokemons/pokemons";
 import { SearchContext } from "../../Context/Search";
-
+import Animation from "../../components/Animation/animation";
 const Product = () => {
   const [cards, setCards] = useState<CardsProps>();
   const { namePokemon } = useContext(SearchContext);
@@ -58,6 +58,9 @@ const Product = () => {
         <Title>Nossos Produtos</Title>
       </TitleProducts>
       <Container>
+        {!!cards?.data.length === false && (
+          <Animation isPaused={!!cards?.data.length} />
+        )}
         {cards &&
           cards.data?.map((item, index) => (
             <CardPokemon
