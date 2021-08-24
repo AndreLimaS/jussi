@@ -32,7 +32,7 @@ const Header = () => {
     <Container>
       <Menu>
         <Link to={'/'}>
-          <img src={logoJussi} alt="Jussi" />
+          <img src={logoJussi} alt="Jussi" loading="lazy"/>
         </Link>
         <TitleMenu>Nossas Soluções</TitleMenu>
         <TitleMenu>Conheça a Jüssi</TitleMenu>
@@ -44,12 +44,12 @@ const Header = () => {
         <ContentSearch>
           <InputSearch placeholder="Buscar" onChange={handleChange} onKeyDown={handleKeyDown} />
           <ImgTouch>
-            <img width="16px" height="16px" src={search} alt="Search" />
+            <img width="16px" height="16px" src={search} alt="Search" loading="lazy"/>
           </ImgTouch>
         </ContentSearch>
         <TitleMenu>Login</TitleMenu>
         <ImgTouch>
-          <img src={shopping} alt="Shopping" />
+          <img src={shopping} alt="Shopping" loading="lazy"/>
         </ImgTouch>
       </Search>
     </Container>

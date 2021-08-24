@@ -5,7 +5,7 @@ import { CardBuyProps } from './types';
 const CardBuy = ({ image, text, button, ...props }: CardBuyProps) => {
   return (
     <Container {...props}>
-      <img src={image} alt={text} />
+      <img src={image} alt={text} loading="lazy"/>
       {button}
     </Container>
   );

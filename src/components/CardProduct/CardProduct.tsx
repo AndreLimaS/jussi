@@ -1,5 +1,4 @@
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Wrapper, Container, ImgProduct, NumberProduct, Title, Describe, Feature } from './Styles';
 import { ProductPropsTypes } from './types';
 
@@ -8,7 +7,7 @@ const CardProduct = ({ img, number, name, describe, feature, button }: ProductPr
     <Wrapper>
       <Container>
         <ImgProduct>
-          <LazyLoadImage src={img} alt={name} />
+          <img src={img} alt={name} loading="lazy"/>
           <NumberProduct>{number}</NumberProduct>
         </ImgProduct>
         <Title>{name}</Title>

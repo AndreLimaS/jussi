@@ -1,5 +1,4 @@
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import facebookIcon from '../../assets/icons/facebook.svg';
 import instagramIcon from '../../assets/icons/instagram.svg';
 import linkedinIcon from '../../assets/icons/linkedin.svg';
@@ -10,11 +9,11 @@ const Footer = () => {
   return (
     <Wrapper>
       <Container>
-        <LazyLoadImage width={'142px'} height={'27px'} src={wpCompany} alt={'WPP Company'} />
+        <img width={'142px'} height={'27px'} src={wpCompany} alt={'WPP Company'} loading="lazy"/>
         <Social>
-          <LazyLoadImage src={facebookIcon} alt={'Facebook'} />
-          <LazyLoadImage src={instagramIcon} alt={'Instagram'} />
-          <LazyLoadImage src={linkedinIcon} alt={'Linkedin'} />
+          <img src={facebookIcon} alt={'Facebook'} loading="lazy"/>
+          <img src={instagramIcon} alt={'Instagram'} loading="lazy"/>
+          <img src={linkedinIcon} alt={'Linkedin'} loading="lazy"/>
         </Social>
       </Container>
     </Wrapper>

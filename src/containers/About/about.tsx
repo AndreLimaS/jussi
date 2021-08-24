@@ -2,8 +2,6 @@ import React from 'react';
 import Button from '../../components/Button/Button';
 import colors from '../../styles/colors';
 import houseJussi from '../../assets/images/jussi-house.png';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-
 import {
   Wrapper,
   Container,
@@ -37,7 +35,7 @@ const About = () => {
       </Container>
       <ContainerImg>
         <ImgPosition>
-          <LazyLoadImage src={houseJussi} alt={'Escritório Jussi'} effect="blur"/>
+          <img src={houseJussi} alt={'Escritório Jussi'} loading="lazy"/>
         </ImgPosition>
       </ContainerImg>
     </Wrapper>

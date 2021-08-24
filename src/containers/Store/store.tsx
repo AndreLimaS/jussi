@@ -11,10 +11,10 @@ const Store = () => {
       <Container>
         <TitleStores>Nossas principais lojas VTEX</TitleStores>
         <TitleStores> → </TitleStores>
-        <img src={logoBrastemp} alt="Brastemp" />
-        <img src={logoBuy} alt="Compra Certa" />
-        <img src={logoConsul} alt="Consul" />
-        <img src={logothebar} alt="The bar" />
+        <img src={logoBrastemp} alt="Brastemp" loading="lazy"/>
+        <img src={logoBuy} alt="Compra Certa" loading="lazy"/>
+        <img src={logoConsul} alt="Consul" loading="lazy"/>
+        <img src={logothebar} alt="The bar" loading="lazy"/>
       </Container>
     </Wrapper>
   );

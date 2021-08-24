@@ -8,7 +8,7 @@ const CardPokemon = ({ image, name, hp }: CardPokemonProps) => {
     <Wrapper>
       <ContainerCard>
         <ImgProduct>
-          <img src={image} alt={name} />
+          <img src={image} alt={name} loading="lazy"/>
         </ImgProduct>
         <ContainerDeitals>
           <Title>{name}</Title>
